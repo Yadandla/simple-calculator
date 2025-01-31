@@ -32,13 +32,13 @@ function App() {
     <>
       <div className='outer-div relative top-0 left-0 w-full h-[100vh]'>
         <div className='inner-div absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-80 md:w-80 sm:w-[18rem] h-auto bg-black p-2 rounded-lg'>
-          <div className='flex justify-between items-center pt-2 pb-10'>
+          <div className='flex justify-between items-center py-2'>
             <a className='capitalize text-primary text-sm font-semibold underline underline-offset-8'>calculator</a>
             <a className='capitalize text-white text-sm font-semibold'>exchange rate</a>
             <a className='capitalize text-white text-sm font-semibold'>unit converter</a>
           </div>
-          <div className='w-full h-10 overflow-hidden'>
-            <h5 className='text-right text-2xl text-white font-bold head'>{Numbers}</h5>
+          <div className='w-full h-10 flex justify-around items-end flex-col break-all break-words min-h-32 overflow-auto output'>
+            <h5 className='text-right text-2xl text-white font-bold pr-2'>{Numbers}</h5>
           </div>
           <div className='text-white font-medium flex justify-between items-center overflow-hidden'>
             <div className='flex justify-between items-center text-2xl flex-col'>

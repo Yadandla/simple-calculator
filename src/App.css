@@ -8,8 +8,14 @@
   box-sizing: border-box;
 }
 
-/* .inner-div {
-    box-shadow: 0px 0px 0px 0px #808080b5, inset 0px 0px 20px 0px #80808042, 4px 4px 11px #808080b5, inset 2px 4px 6px #80808042;
-    backdrop-filter: brightness(1);
-    background: #00000000;
-} */
+.output::-webkit-scrollbar {
+  width: 1px;
+}
+
+.output::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+.output::-webkit-scrollbar-thumb {
+  background-color: #FFC107;
+}
