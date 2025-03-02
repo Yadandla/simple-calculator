@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css'
+import { evaluate } from 'mathjs';
 
 function App() {
 
@@ -21,10 +22,14 @@ function App() {
     setNumbers(Numbers.slice(0, -1));
   }
 
-  // Performing operation with different operators using eval function
+  // Performing operation with different operators using evaluate function
   const handleCalculation = () => {
-    const total = eval(Numbers);
-    setNumbers(total);
+    const total = evaluate(Numbers);
+    if (Number.isNaN(total)) {
+      setNumbers("Cannot be divide by zero");
+    } else {
+      setNumbers(total);
+    }
   }
 
 
