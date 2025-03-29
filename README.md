@@ -1,6 +1,6 @@
 # Simple Calculator 📝
 
-Designed a simple calculator as same in my mobile with all functionalities
+Designed a simple calculator as same in my mobile with all functionalities but little different
 
 ![Image](https://github.com/user-attachments/assets/8c5e5aaa-fa05-487e-854c-a6ff6de56d5a)
 
